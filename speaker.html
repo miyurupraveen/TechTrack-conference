@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TechTrack-speakers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+   background-color: #434e66;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/*    navigation bar    */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position:fixed;
+  width:100%;
+  top:0;
+  
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.navbar-right{
+	float:right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*     main section     */
+
+.main {
+  margin:40px 0 0 0;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  background-color:#072352;
+   
+}
+
+.column {
+  float: left;
+  width: 16.6666%;
+  margin-bottom: 16px;
+  padding: 0 2px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  background-color:Gainsboro;
+  
+}
+.container {
+  height:250px;
+  padding: 0 20px;
+  
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 1300px) {
+  .column {
+    width: 16.666%;
+   display: block;
+}
+  .container{
+   height:300px;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .column {
+    width: 33.3333%;
+   display: block;
+}
+  .card{
+   height:720px;
+  }
+  .container{
+   height:200px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .column {
+    width: 33.3333%;
+   display: block;
+}
+  .card{
+   height:650px;
+  }
+  .container{
+   height:200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .column {
+    width: 50%;
+   display: block;
+}
+  .card{
+   height:780px;
+  }
+  .container{
+   height:200px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .column {
+    width: 50%;
+   display: block;
+}
+  .card{
+   height:650px;
+  }
+  .container{
+   height:200px;
+  }
+}
+
+
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+
+/*      footer      */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+  }
+
+footer{
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #111;
+  
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 50%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 30px;
+  padding: 20px;
+}
+
+
+
+footer .content .upper i{
+  padding-right: 16px;
+}
+
+
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 60%;
+  margin: 10px 30px;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 60%;
+  margin: 10px 30px;
+  font-size: 20px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content .media-icons a{
+  font-size: 20px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color:#eb2f06;
+  color: #eb2f06;
+}
+
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  } 
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+</style>
+</head>
+
+
+
+<body>
+	<div class="navbar">
+		<a href="home.html"><i class="fa fa-home"></i> Home</a>
+		<div class="navbar-right">
+			<a href="about.html"><i class="fa fa-user"></i> About Us</a>
+			<a href="speaker.html"><i class="fa fa-microphone"></i> Speakers</a>
+			<a href="schedule.html"><i class="fa fa-pencil-square-o"></i> Schedule</a>
+			<a href="location.html"><i class="fa fa-map-marker"></i> Location</a>
+			<a href="faq.html"><i class="fa fa-question-circle"></i> FAQs</a>
+		</div>	
+	</div>
+	<div class="main">
+		<h1 style="text-align:center; font-weight:700;">SPEAKERS</h1>
+		<hr style="height:2px;border-width:0;background-color:white">
+		<p style="font-size:20px;">We're happy to welcome over 20+ speakers to present on the industry's latest technologies.</p>
+		<p style="font-size:20px;">Prepare for an inspiration extravaganza.We have your expert on our stage.</p>
+		<hr style="height:3px;border-width:0;background-color:white">
+	</div>
+
+	<div class="row">
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-1.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>John Doe</h2>
+				<p>Award-winning designer, software developer and entrepreneur, Joe is co-founder of Makeshift-an independent London start-up studio, building digital products.</p>
+			  </div>
+			  <p><button>john@gmail.com</button></p>
+			</div>
+		  </div>
+
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-2.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Zoe Smith</h2>
+				<p>Zoe Smith is a published Author, Keynote Speaker and Marketing Consultant (specialising in digital and AI) with over 18 years’ experience.</p>
+			  </div>
+			  <p><button>zoe@gmail.com</button></p>
+			</div>
+		  </div>
+		  
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-3.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Ryan Lemoine</h2>
+				<p>Ryan Lemoine is an author, journalist and TV producer who specialises in bio science and opens up a fascinating world to anyone who hears him speak</p>
+				</div>
+			  <p><button>kenner@gmail.com</button></p>
+			</div>
+		  </div>
+		  
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-4.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Dan Denney</h2>
+				<p>An ambitious young social entrepreneur, Dan Denney and his unprecedented science and technology projects have captured the attention of the global media.</p>
+			  </div>
+			  <p><button>denney@gmail.com</button></p>
+			</div>
+		  </div>
+
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-5.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Shay Howe</h2>
+				<p>Shay has an astute understanding of the way in which retailers, technology and high-achieving teams work in the digital world and brings a unique perspective to any event.</p>
+			  </div>
+			  <p><button>shay@gmail.com</button></p>
+			</div>
+		  </div>
+		  
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-6.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Maya Bruck</h2>
+				<p>Maya Bruck is a pioneering technology researcher and expert in the influence of digital technology on modern society.</p>
+			  </div>
+			  <p><button>maya@gmail.com</button></p>
+			</div>
+		  </div>
+	</div>
+	<div class="row">
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-7.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Lara Collins</h2>
+				<p>Lara Collins is an inventor and entrepreneur, and the Founder of EMOTIV, a neuroengineering company specialising in breakthrough brain interface technology.</p>
+			  </div>
+			  <p><button>lara@gmail.com</button></p>
+			</div>
+		  </div>
+
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-8.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Jenson Jones</h2>
+				<p>Jenson Jones is a top AI keynote speaker and technology strategist specializing in applied artificial intelligence (AI) in financial services</p>
+			  </div>
+			  <p><button>jenson@gmail.com</button></p>
+			</div>
+		  </div>
+		  
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-9.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Brad Smith</h2>
+				<p>Brad is the founder and CEO of AMD Robotics - a company that aims to create robots as socially adept as any human being.</p>
+			  </div>
+			  <p><button>brad@gmail.com</button></p>
+			</div>
+		  </div>
+		  
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-10.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Dr.Erica Decker</h2>
+				<p>As her popular TED talk made apparent, Dr. Erica Decker has the ability to simplify and translate complex science, and make it accessible to any audience.</p>
+			  </div>
+			  <p><button>erica@gmail.com</button></p>
+			</div>
+		  </div>
+
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-11.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Dr.Leslie Jensen</h2>
+				<p>Dr Leslie Jensen is a Senior TED Fellow speaking about fusing science, technology and the environment to challenge the principles of business worldwide</p>
+			  </div>
+			  <p><button>leslie@gmail.com</button></p>
+			</div>
+		  </div>
+		  
+		  <div class="column">
+			<div class="card">
+			  <img src="images\speaker-12.jpg" style="width:100%;">
+			  <div class="container">
+				<h2>Victoria Frey</h2>
+				<p>Victoroa is a world-renowned game designer and inventor of SuperBetter and was included in Fast Company's 1000 Most Creative People in Business 2019.</p>
+			  </div>
+			  <p><button>victoria@gmail.com</button></p>
+			</div>
+		  </div>
+		</div>
+	
+	
+	<footer>
+		<div class="content">
+			<div class="left box">
+				<div class="upper">
+					<div class="topic">Contact us :</div>
+					<div class="phone">
+						<p><i class="fa fa-phone"></i>+007 9089 6767 / +008 6543 756</p>
+					</div>
+					<div class="email">
+						<a target="_blank" href="mailto:techtrack@gmail.com"><i class="fa fa-envelope"></i>techtrack@gmail.com</a>
+					</div>
+				</div>
+				<br>
+				<div class="lower">
+					<div class="topic">Follow us :</div>
+					<div class="media-icons">
+						<a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
+						<a target="_blank "href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+						<a target="_blank" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+						<a target="_blank" href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+						<a target="_blank" href="https://www.linkedin.com"><i class="fa fa-linkedin-square"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="right box">
+				<div class="topic">Get in touch with us :</div>
+				<form action="#">
+					<input type="text" placeholder="Enter your name">
+					<input type="text" placeholder="Enter your email address">
+					<input type="text" placeholder="Write your message...">
+					
+					<input type="submit" name="" value="Send">
+				</form>
+			</div>
+		</div>
+ </footer>
+</body>
+</html>
